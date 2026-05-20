@@ -1,6 +1,6 @@
 # License Status: Why States Toll: An Empirical Model of Finance Choice
 
-Generated: 2026-05-20 15:23:47 AEST
+Generated: 2026-05-20 15:32:54 AEST
 
 Recorded license/access note from the verified audit row: UDC/publisher terms apply to paper PDF; public/government raw sources are cited, and local derived/author-created assets need explicit repository license before release.
 

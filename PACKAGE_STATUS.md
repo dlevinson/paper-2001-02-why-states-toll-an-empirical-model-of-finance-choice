@@ -1,6 +1,6 @@
 # Package Status: Why States Toll: An Empirical Model of Finance Choice
 
-Generated: 2026-05-20 15:23:47 AEST
+Generated: 2026-05-20 15:32:54 AEST
 
 ## Audit State
 
