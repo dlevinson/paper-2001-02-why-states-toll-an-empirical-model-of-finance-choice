@@ -1,0 +1,1147 @@
+﻿TRIPS WITHIN ALABAMA 7,205
+Alaska 6
+Arizona 29
+Arkansas 122
+California 97
+Colorado 43
+Connecticut 7
+Delaware 11
+District of Columbia 12
+Florida 1,514
+Georgia 2,477
+Hawaii 9
+Idaho 2
+Illinois 130
+Indiana 195
+Iowa 3
+Kansas 17
+Kentucky 211
+Louisiana 668
+Maine 3
+Maryland 112
+Massachusetts 16
+Michigan 146
+Minnesota 34
+Mississippi 960
+Missouri 120
+Montana 1
+Nebraska 26
+Nevada 1
+New Hampshire 3
+New Jersey 24
+New Mexico 9
+New York 114
+North Carolina 138
+North Dakota 2
+Ohio 258
+Oklahoma 132
+Oregon 2
+Pennsylvania 43
+Rhode Island 6
+South Carolina 209
+South Dakota 8
+Tennessee 1,183
+Texas 251
+Utah 8
+Vermont 2
+Virginia 130
+Washington 43
+West Virginia 12
+Wisconsin 40
+Wyoming 2
+
+
+TRIPS WITHIN ALABAMA 7,205
+Alaska 9
+Arizona 27
+Arkansas 55
+California 152
+Colorado 50
+Connecticut —
+Delaware 6
+District of Columbia 97
+Florida 1,934
+Georgia 2,539
+Hawaii 3
+Idaho 2
+Illinois 128
+Indiana 76
+Iowa 35
+Kansas 17
+Kentucky 107
+Louisiana 50
+Maine 3
+Maryland 32
+Massachusetts 69
+Michigan 56
+Minnesota 18
+Mississippi 985
+Missouri 197
+Montana 10
+Nebraska 3
+Nevada 25
+New Hampshire 2
+New Jersey 40
+New Mexico —
+New York 37
+North Carolina 284
+North Dakota 2
+Ohio 96
+Oklahoma 20
+Oregon 1
+Pennsylvania 50
+Rhode Island 2
+South Carolina 203
+South Dakota 4
+Tennessee 1,831
+Texas 231
+Utah 26
+Vermont —
+Virginia 166
+Washington 11
+West Virginia 37
+Wisconsin 4
+Wyoming 2
+
+TRIPS WITHIN ALASKA 1,798
+Alabama 9
+Arizona 39
+Arkansas 24
+California 101
+Colorado 43
+Connecticut 13
+Delaware 2
+District of Columbia 1
+Florida 83
+Georgia 20
+Hawaii 10
+Idaho 15
+Illinois 50
+Indiana 18
+Iowa 11
+Kansas 10
+Kentucky 2
+Louisiana 10
+Maine 8
+Maryland 18
+Massachusetts 21
+Michigan 85
+Minnesota 22
+Mississippi 26
+Missouri 15
+Montana 9
+Nebraska 7
+Nevada 16
+New Hampshire 2
+New Jersey 24
+New Mexico 6
+New York 41
+North Carolina 11
+North Dakota 1
+Ohio 33
+Oklahoma 10
+Oregon 48
+Pennsylvania 33
+Rhode Island 1
+South Carolina —
+South Dakota 2
+Tennessee 27
+Texas 146
+Utah 20
+Vermont 3
+Virginia 4
+Washington 114
+West Virginia 2
+Wisconsin 21
+Wyoming 5
+
+Table 3. Destination States of People Who Live in Alaska (In thousands)
+TRIPS WITHIN ALASKA 1,798
+Alabama 6
+Arizona 37
+Arkansas 10
+California 98
+Colorado 22
+Connecticut 6
+Delaware —
+District Columbia 9
+Florida 16
+Georgia 4
+Hawaii 23
+Idaho 7
+Illinois 19
+Indiana 2
+Iowa 1
+Kansas 3
+Kentucky 1
+Louisiana 6
+Maine 1
+Maryland 3
+Massachusetts 7
+Michigan 8
+Minnesota 11
+Mississippi 1
+Missouri 10
+Montana 10
+Nebraska 3
+Nevada 36
+New Hampshire —
+New Jersey 2
+New Mexico 5
+New York 12
+North Carolina 3
+North Dakota 1
+Ohio 8
+Oklahoma 5
+Oregon 60
+Pennsylvania 6
+Rhode Island —
+South Carolina 1
+South Dakota 2
+Tennessee 3
+Texas 25
+Utah 9
+Vermont 1
+Virginia 5
+Washington 113
+West Virginia 1
+Wisconsin 9
+Wyoming 5
+
+TRIPS WITHIN ARIZONA 10,895
+Alabama 27
+Alaska 37
+Arkansas 37
+California 3,832
+Colorado 532
+Connecticut 45
+Delaware 2
+District Columbia 11
+Florida 118
+Georgia 33
+Hawaii 10
+Idaho 69
+Illinois 449
+Indiana 110
+Iowa 88
+Kansas 106
+Kentucky 50
+Louisiana 28
+Maine 10
+Maryland 93
+Massachusetts 80
+Michigan 220
+Minnesota 208
+Mississippi 19
+Missouri 113
+Montana 62
+Nebraska 85
+Nevada 450
+New Hampshire 17
+New Jersey 161
+New Mexico 798
+New York 189
+North Carolina 41
+North Dakota 33
+Ohio 137
+Oklahoma 61
+Oregon 291
+Pennsylvania 180
+Rhode Island 13
+South Carolina 13
+South Dakota 36
+Tennessee 58
+Texas 551
+Utah 447
+Vermont 7
+Virginia 121
+Washington 163
+West Virginia 5
+Wisconsin 176
+Wyoming 28
+
+TRIPS WITHIN ARIZONA 10,895
+Alabama 29
+Alaska 39
+Arkansas 15
+California 4,076
+Colorado 346
+Connecticut 27
+Delaware 5
+District Columbia 85
+Florida 94
+Georgia 51
+Hawaii 89
+Idaho 33
+Illinois 215
+Indiana 45
+Iowa 58
+Kansas 74
+Kentucky 12
+Louisiana 29
+Maine —
+Maryland 36
+Massachusetts 41
+Michigan 68
+Minnesota 111
+Mississippi 1
+Missouri 64
+Montana 36
+Nebraska 61
+Nevada 1,046
+New Hampshire 40
+New Jersey 23
+New Mexico 339
+New York 96
+North Carolina 51
+North Dakota 9
+Ohio 64
+Oklahoma 65
+Oregon 114
+Pennsylvania 82
+Rhode Island 1
+South Carolina 17
+South Dakota 21
+Tennessee 12
+Texas 362
+Utah 273
+Vermont 8
+Virginia 35
+Washington 188
+West Virginia —
+Wisconsin 47
+Wyoming 56
+
+TRIPS WITHIN ARKANSAS 4,485
+Alabama 55
+Alaska 10
+Arizona 15
+California 226
+Colorado 21
+Connecticut 12
+Delaware 2
+District of Columbia 7
+Florida 231
+Georgia 37
+Hawaii 2
+Idaho 7
+Illinois 192
+Indiana 100
+Iowa 65
+Kansas 175
+Kentucky 51
+Louisiana 279
+Maine —
+Maryland 18
+Massachusetts 9
+Michigan 216
+Minnesota 12
+Mississippi 258
+Missouri 909
+Montana 1
+Nebraska 61
+Nevada 11
+New Hampshire 3
+New Jersey 23
+New Mexico 17
+New York —
+North Carolina 46
+North Dakota 5
+Ohio 11
+Oklahoma 663
+Oregon —
+Pennsylvania 34
+Rhode Island 2
+South Carolina 10
+South Dakota 3
+Tennessee 777
+Texas 1,222
+Utah 5
+Vermont 2
+Virginia 12
+Washington 12
+West Virginia 7
+Wisconsin 37
+Wyoming 3
+
+TRIPS WITHIN ARKANSAS 4,485
+Alabama 122
+Alaska 24
+Arizona 37
+California 97
+Colorado 106
+Connecticut 6
+Delaware —
+District Columbia 55
+Florida 159
+Georgia 73
+Hawaii 4
+Idaho 13
+Illinois 146
+Indiana 40
+Iowa 32
+Kansas 131
+Kentucky 65
+Louisiana 519
+Maine 3
+Maryland 11
+Massachusetts 11
+Michigan 48
+Minnesota 16
+Mississippi 475
+Missouri 923
+Montana 5
+Nebraska 31
+Nevada 56
+New Hampshire —
+New Jersey 10
+New Mexico 28
+New York 38
+North Carolina 36
+North Dakota 5
+Ohio 57
+Oklahoma 784
+Oregon 9
+Pennsylvania 14
+Rhode Island 4
+South Carolina 19
+South Dakota 9
+Tennessee 505
+Texas 997
+Utah 5
+Vermont 2
+Virginia 30
+Washington 17
+West Virginia 7
+Wisconsin 53
+Wyoming 19
+
+TRIPS WITHIN CALIFORNIA 64,843
+Alabama 152
+Alaska 98
+Arizona 4,076
+Arkansas 97
+Colorado 1,048
+Connecticut 196
+Delaware 28
+District of Columbia 93
+Florida 669
+Georgia 306
+Hawaii 210
+Idaho 330
+Illinois 965
+Indiana 171
+Iowa 234
+Kansas 185
+Kentucky 118
+Louisiana 163
+Maine 28
+Maryland 282
+Massachusetts 437
+Michigan 518
+Minnesota 439
+Mississippi 72
+Missouri 266
+Montana 89
+Nebraska 130
+Nevada 2,922
+New Hampshire 58
+New Jersey 539
+New Mexico 321
+New York 844
+North Carolina 178
+North Dakota 31
+Ohio 538
+Oklahoma 169
+Oregon 1,670
+Pennsylvania 490
+Rhode Island 53
+South Carolina 52
+South Dakota 36
+Tennessee 226
+Texas 1,516
+Utah 996
+Vermont 32
+Virginia 359
+Washington 1,719
+West Virginia 25
+Wisconsin 226
+Wyoming 41
+
+TRIPS WITHIN CALIFORNIA 64,843
+Alabama 97
+Alaska 101
+Arizona 3,832
+Arkansas 226
+Colorado 1,408
+Connecticut 190
+Delaware 13
+District Columbia 425
+Florida 949
+Georgia 315
+Hawaii 1,530
+Idaho 329
+Illinois 594
+Indiana 247
+Iowa 69
+Kansas 141
+Kentucky 45
+Louisiana 139
+Maine 284
+Maryland 133
+Massachusetts 377
+Michigan 452
+Minnesota 493
+Mississippi 106
+Missouri 477
+Montana 533
+Nebraska 17
+Nevada 15,175
+New Hampshire 39
+New Jersey 314
+New Mexico 526
+New York 1,441
+North Carolina 286
+North Dakota 22
+Ohio 651
+Oklahoma 114
+Oregon 1,172
+Pennsylvania 686
+Rhode Island 24
+South Carolina 71
+South Dakota 122
+Tennessee 183
+Texas 911
+Utah 615
+Vermont 126
+Virginia 187
+Washington 1,102
+West Virginia 118
+Wisconsin 59
+Wyoming 60
+
+TRIPS WITHIN COLORADO 6,982
+Alabama 50
+Alaska 22
+Arizona 346
+Arkansas 106
+California 1,408
+Connecticut 66
+Delaware 10
+District of Columbia 24
+Florida 219
+Georgia 85
+Hawaii 16
+Idaho 82
+Illinois 368
+Indiana 151
+Iowa 270
+Kansas 841
+Kentucky 47
+Louisiana 95
+Maine 7
+Maryland 58
+Massachusetts 67
+Michigan 117
+Minnesota 217
+Mississippi 31
+Missouri 476
+Montana 87
+Nebraska 596
+Nevada 105
+New Hampshire 23
+New Jersey 126
+New Mexico 747
+New York 122
+North Carolina 68
+North Dakota 48
+Ohio 233
+Oklahoma 326
+Oregon 109
+Pennsylvania 240
+Rhode Island 12
+South Carolina 39
+South Dakota 115
+Tennessee 58
+Texas 1,396
+Utah 281
+Vermont 13
+Virginia 100
+Washington 164
+West Virginia 10
+Wisconsin 149
+Wyoming 692
+
+TRIPS WITHIN COLORADO 6,982
+Alabama 43
+Alaska 43
+Arizona 532
+Arkansas 21
+California 1,048
+Connecticut 13
+Delaware 1
+District Columbia 109
+Florida 315
+Georgia 141
+Hawaii 38
+Idaho 79
+Illinois 215
+Indiana 40
+Iowa 107
+Kansas 333
+Kentucky 7
+Louisiana 33
+Maine 12
+Maryland 43
+Massachusetts 77
+Michigan 106
+Minnesota 226
+Mississippi 14
+Missouri 205
+Montana 105
+Nebraska 439
+Nevada 463
+New Hampshire 5
+New Jersey 78
+New Mexico 969
+New York 216
+North Carolina 114
+North Dakota 55
+Ohio 119
+Oklahoma 168
+Oregon 103
+Pennsylvania 66
+Rhode Island 25
+South Carolina 20
+South Dakota 135
+Tennessee 72
+Texas 504
+Utah 655
+Vermont 2
+Virginia 36
+Washington 129
+West Virginia 10
+Wisconsin 56
+Wyoming 703
+
+TRIPS WITHIN CONNECTICUT 177
+Alabama 10
+Alaska 6
+Arizona 27
+Arkansas 6
+California 190
+Colorado 13
+Delaware 32
+District of Columbia 44
+Florida 246
+Georgia 77
+Hawaii —
+Idaho 3
+Illinois 21
+Indiana 34
+Iowa 5
+Kansas 5
+Kentucky 2
+Louisiana 22
+Maine 199
+Maryland 321
+Massachusetts 1,534
+Michigan 26
+Minnesota 22
+Mississippi 3
+Missouri 9
+Montana 2
+Nebraska 7
+Nevada 4
+New Hampshire 632
+New Jersey 736
+New Mexico 1
+New York 1,386
+North Carolina 83
+North Dakota 2
+Ohio 244
+Oklahoma 4
+Oregon 12
+Pennsylvania 532
+Rhode Island 135
+South Carolina 47
+South Dakota 1
+Tennessee 7
+Texas 68
+Utah 2
+Vermont 146
+Virginia 167
+Washington 34
+West Virginia 7
+Wisconsin 31
+Wyoming 1
+
+TRIPS WITHIN CONNECTICUT 177
+Alabama 7
+Alaska 13
+Arizona 45
+Arkansas 12
+California 196
+Colorado 66
+Delaware 51
+District Columbia 222
+Florida 700
+Georgia 105
+Hawaii 27
+Idaho 5
+Illinois 122
+Indiana 30
+Iowa 24
+Kansas 3
+Kentucky 11
+Louisiana 51
+Maine 832
+Maryland 166
+Massachusetts 2,613
+Michigan 88
+Minnesota 42
+Mississippi 18
+Missouri 44
+Montana 11
+Nebraska 6
+Nevada 60
+New Hampshire 576
+New Jersey 677
+New Mexico 4
+New York 1,981
+North Carolina 160
+North Dakota 10
+Ohio 123
+Oklahoma 7
+Oregon 7
+Pennsylvania 841
+Rhode Island 473
+South Carolina 117
+South Dakota 4
+Tennessee 73
+Texas 99
+Utah 27
+Vermont 833
+Virginia 181
+Washington 25
+West Virginia 28
+Wisconsin 39
+Wyoming 4
+
+TRIPS WITHIN DELAWARE 82
+Alabama 5
+Alaska —
+Arizona 5
+Arkansas —
+California 13
+Colorado 1
+Connecticut 51
+District of Columbia 103
+Florida 53
+Georgia 5
+Hawaii 1
+Idaho 1
+Illinois —
+Indiana 7
+Iowa 11
+Kansas —
+Kentucky 2
+Louisiana —
+Maine 6
+Maryland 856
+Massachusetts 51
+Michigan 18
+Minnesota —
+Mississippi 1
+Missouri 2
+Montana —
+Nebraska 2
+Nevada —
+New Hampshire 10
+New Jersey 170
+New Mexico 1
+New York 497
+North Carolina 45
+North Dakota —
+Ohio 61
+Oklahoma —
+Oregon —
+Pennsylvania 2,692
+Rhode Island 6
+South Carolina 9
+South Dakota —
+Tennessee 53
+Texas —
+Utah —
+Vermont 5
+Virginia 357
+Washington 1
+West Virginia 22
+Wisconsin 9
+Wyoming —
+
+TRIPS WITHIN DELAWARE 82
+Alabama 11
+Alaska 2
+Arizona 2
+Arkansas 2
+California 28
+Colorado 10
+Connecticut 32
+District Columbia 79
+Florida 101
+Georgia 29
+Hawaii 3
+Idaho 1
+Illinois 24
+Indiana 12
+Iowa 3
+Kansas 1
+Kentucky 5
+Louisiana 8
+Maine 16
+Maryland 225
+Massachusetts 74
+Michigan 17
+Minnesota 10
+Mississippi 1
+Missouri 7
+Montana —
+Nebraska —
+Nevada 10
+New Hampshire 7
+New Jersey 257
+New Mexico 3
+New York 237
+North Carolina 88
+North Dakota —
+Ohio 35
+Oklahoma 1
+Oregon —
+Pennsylvania 347
+Rhode Island 8
+South Carolina 31
+South Dakota 1
+Tennessee 26
+Texas 27
+Utah 2
+Vermont 19
+Virginia 365
+Washington 4
+West Virginia 24
+Wisconsin 3
+Wyoming —
+
+TRIPS WITHIN FLORIDA 24,083
+Alabama 1,934
+Alaska 16
+Arizona 94
+Arkansas 159
+California 949
+Colorado 315
+Connecticut 700
+Delaware 101
+District of Columbia 104
+Georgia 4,568
+Hawaii 28
+Idaho 23
+Illinois 1,821
+Indiana 997
+Iowa 158
+Kansas 132
+Kentucky 694
+Louisiana 989
+Maine 151
+Maryland 748
+Massachusetts 1,186
+Michigan 1,358
+Minnesota 420
+Mississippi 560
+Missouri 524
+Montana 22
+Nebraska 88
+Nevada 49
+New Hampshire 187
+New Jersey 1,975
+New Mexico 63
+New York 3,129
+North Carolina 1,175
+North Dakota 31
+Ohio 1,630
+Oklahoma 121
+Oregon 78
+Pennsylvania 1,530
+Rhode Island 165
+South Carolina 952
+South Dakota 25
+Tennessee 1,192
+Texas 1,707
+Utah 65
+Vermont 97
+Virginia 1,188
+Washington 175
+West Virginia 165
+Wisconsin 510
+Wyoming 13
+
+TRIPS WITHIN FLORIDA 24,083
+Alabama 1,514
+Alaska 83
+Arizona 118
+Arkansas 231
+California 669
+Colorado 219
+Connecticut 246
+Delaware 53
+District of Columbia 324
+Georgia 3,302
+Hawaii 24
+Idaho 15
+Illinois 512
+Indiana 252
+Iowa 73
+Kansas 52
+Kentucky 321
+Louisiana 710
+Maine 68
+Maryland 190
+Massachusetts 336
+Michigan 556
+Minnesota 42
+Mississippi 1,162
+Missouri 216
+Montana 38
+Nebraska 34
+Nevada 274
+New Hampshire 64
+New Jersey 659
+New Mexico 86
+New York 1,484
+North Carolina 1,227
+North Dakota 10
+Ohio 653
+Oklahoma 21
+Oregon 55
+Pennsylvania 411
+Rhode Island 23
+South Carolina 467
+South Dakota —
+Tennessee 609
+Texas 471
+Utah 190
+Vermont 85
+Virginia 265
+Washington 95
+West Virginia 124
+Wisconsin 194
+Wyoming 14
+
+TRIPS WITHIN GEORGIA 9,448
+Alabama 2,539
+Alaska 4
+Arizona 51
+Arkansas 73
+California 315
+Colorado 141
+Connecticut 105
+Delaware 29
+District of Columbia 48
+Florida 3,302
+Hawaii 4
+Idaho 4
+Illinois 310
+Indiana 144
+Iowa 83
+Kansas 71
+Kentucky 317
+Louisiana 254
+Maine 17
+Maryland 300
+Massachusetts 180
+Michigan 498
+Minnesota 33
+Mississippi 252
+Missouri 215
+Montana 5
+Nebraska 29
+Nevada 12
+New Hampshire 22
+New Jersey 336
+New Mexico 20
+New York 438
+North Carolina 1,834
+North Dakota 5
+Ohio 523
+Oklahoma 63
+Oregon 16
+Pennsylvania 216
+Rhode Island 11
+South Carolina 2,134
+South Dakota 3
+Tennessee 2,973
+Texas 377
+Utah 26
+Vermont 6
+Virginia 608
+Washington 81
+West Virginia 62
+Wisconsin 92
+Wyoming 4
+
+TRIPS WITHIN GEORGIA 9,448
+Alabama 2,477
+Alaska 20
+Arizona 33
+Arkansas 37
+California 306
+Colorado 85
+Connecticut 77
+Delaware 5
+District of Columbia 240
+Florida 4,568
+Hawaii 26
+Idaho 8
+Illinois 307
+Indiana 187
+Iowa 17
+Kansas 9
+Kentucky 272
+Louisiana 283
+Maine 42
+Maryland 111
+Massachusetts 93
+Michigan 259
+Minnesota 28
+Mississippi 514
+Missouri 223
+Montana 15
+Nebraska 51
+Nevada 57
+New Hampshire 1
+New Jersey 176
+New Mexico 6
+New York 272
+North Carolina 1,550
+North Dakota 10
+Ohio 366
+Oklahoma 16
+Oregon 18
+Pennsylvania 164
+Rhode Island 4
+South Carolina 1,900
+South Dakota 6
+Tennessee 2,454
+Texas 373
+Utah 36
+Vermont 3
+Virginia 435
+Washington 38
+West Virginia 127
+Wisconsin 23
+Wyoming 9
+
+TRIPS WITHIN HAWAII 1,322
+Alabama 3
+Alaska 23
+Arizona 89
+Arkansas 4
+California 1,530
+Colorado 38
+Connecticut 27
+Delaware 3
+District of Columbia 4
+Florida 24
+Georgia 26
+Idaho 17
+Illinois 142
+Indiana 22
+Iowa 21
+Kansas 19
+Kentucky 3
+Louisiana 20
+Maine 7
+Maryland 34
+Massachusetts 21
+Michigan 49
+Minnesota 56
+Mississippi 18
+Missouri 28
+Montana 11
+Nebraska 15
+Nevada 35
+New Hampshire 4
+New Jersey 48
+New Mexico 2
+New York 95
+North Carolina 22
+North Dakota 2
+Ohio 42
+Oklahoma 9
+Oregon 135
+Pennsylvania 45
+Rhode Island 8
+South Carolina 21
+South Dakota 4
+Tennessee 18
+Texas 182
+Utah 39
+Vermont 4
+Virginia 51
+Washington 261
+West Virginia 4
+Wisconsin 15
+Wyoming 5
+
+TRIPS WITHIN HAWAII 1,322
+Alabama 9
+Alaska 10
+Arizona 10
+Arkansas 2
+California 210
+Colorado 16
+Connecticut —
+Delaware 1
+District of Columbia 12
+Florida 28
+Georgia 4
+Idaho 4
+Illinois 13
+Indiana 9
+Iowa 1
+Kansas 1
+Kentucky 2
+Louisiana 4
+Maine 3
+Maryland 7
+Massachusetts 6
+Michigan 3
+Minnesota 13
+Mississippi —
+Missouri 2
+Montana 2
+Nebraska 1
+Nevada 218
+New Hampshire —
+New Jersey 6
+New Mexico 3
+New York 16
+North Carolina 5
+North Dakota —
+Ohio 9
+Oklahoma —
+Oregon 8
+Pennsylvania 15
+Rhode Island —
+South Carolina 4
+South Dakota —
+Tennessee 1
+Texas 26
+Utah 11
+Vermont —
+Virginia 10
+Washington 56
+West Virginia 1
+Wisconsin 3
+Wyoming —
+
+

@@ -1,0 +1,85 @@
+
+
+  Prepared for: dmlevins@uclink4.berkeley.edu
+
+
+
+
+  Access to input files verified for processing!
+
+*************************************************************************
+
+  EXTRACTION PROGRAMS EXECUTION HISTORY
+
+  1. Programs execution STARTED! at Tue Nov  3 13:55:03 EST 1998!
+  2. UNIX Programs Starting to Generate SAS Extraction Program
+      (/ftp/pub/tmp/98110313-4/pums905p.sas)
+  3. UNIX Finished Generation of SAS Extraction Program!
+       Your Request has Generated '678' Initial Lines of SAS Program Code!
+       (Note: The SAS Program Generates Additional SAS Program Code!)
+  4. Sending Data and Program Code to SAS Processing Engine!
+  5. SAS Extraction Program Execution STARTED! at Tue Nov  3 13:55:04 EST 1998!
+  6. Normal SAS program termination
+  7. SAS Extraction Program Execution FINISHED! at Tue Nov  3 14:08:38 EST 1998!
+  8. CHECKING '/ftp/pub/tmp/98110313-4/pums905p.log' for ERRORS.
+  9. NO ERRORS Found in the SAS Program Execution Log!
+ 10. The Following Output Files Have Been Created:
+     /ftp/pub/tmp/98110313-4/pums905p.sas
+     /ftp/pub/tmp/98110313-4/pums905p.log
+     /ftp/pub/tmp/98110313-4/pums905p.box
+     /ftp/pub/tmp/98110313-4/pums905p.fmt
+     /ftp/pub/tmp/98110313-4/pums905p.doc
+
+*************************************************************************
+
+  The files in this directory were produced by the Data Extraction System
+  for a specific extraction request by the user specified above.
+
+  Files may be in compressed form (depending upon user selected compression
+  option) and as such may have appropriate compression-file-name
+  suffixes (e.g. '.Z' suffix indicates standard UNIX compression, '.gz'
+  indicates GNU-ZIP compression and '.zip', indicates a PKZIP compression).
+
+  The first portion of the filename indicates the source data name or number
+  and the second portion of the name indicates the contents of the file.
+  The last part of the name, if present, indicates the type of compression.
+  For example 'source-name.contents.compression-type'.
+
+  Explanation of file contents abbreviations:
+
+  box -   An ASCII text data file containing both data and meta-data in a single
+          processable file.
+
+  doc -   An ASCII text user information file describing the data stored in
+          the 'box' file in a standard easy to read format.
+
+  ssd## - A SAS System data set for an IRIX-SGI-Challange computer, running
+          SAS version 6.11.
+
+          formats.sct## - A SAS System formats catalog containing variable
+                          formats is also produced in conjunction with SAS
+                          data sets.
+
+  fmt -   A SAS program which can be used as an 'include' file in SAS to
+          link variables to their appropriate formats.
+
+  sas -   A copy of the SAS program which was used to create the extract.
+
+  log -   A copy of the SAS log describing the execution of the SAS program
+          which was used to create the extract.
+
+  dat -   A delimited ASCII text data file for loading into spreadsheets and
+          'SQL' databases.
+
+  sql -   A 'SQL' program for loading a 'dat' file into a 'SQL' database.
+
+
+When using the 'box' file format to transport data, SAS programs are available
+to 'box' and 'unbox' files 'from' and 'to' SAS data sets. These programs
+are available in the anonymous 'ftp' directory '/src/sas' and are named:
+
+  'box.sas'  (from SAS to box)
+  'unbox.sas'  (from box to SAS format)
+  'selunbox.sas'  (from box to SAS format selecting only specified data sets)
+
+

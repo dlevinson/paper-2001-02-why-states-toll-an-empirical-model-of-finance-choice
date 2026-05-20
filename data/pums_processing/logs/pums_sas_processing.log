@@ -1,0 +1,1040 @@
+1                                                          The SAS System                            13:55 Tuesday, November 3, 1998
+
+NOTE: Copyright (c) 1989-1996 by SAS Institute Inc., Cary, NC, USA. 
+NOTE: SAS (r) Proprietary Software Release 6.11  TS040
+      Licensed to BUREAU OF THE CENSUS, Site 0031684014.
+
+
+
+
+This message is contained in the SAS news file, and is presented upon
+initialization.  Edit the files "news" in the "misc/base" directory to
+display site-specific news and information in the program log.
+The command line option "-nonews" will prevent this display.
+
+
+
+NOTE: AUTOEXEC processing beginning; file is /d7/sas611/autoexec.sas.
+
+NOTE: SAS initialization used:
+      real time           0.85 seconds
+      cpu time            0.08 seconds
+      
+
+NOTE: AUTOEXEC processing completed.
+
+1               *** BEGIN pums905p.sas PROGRAM ***;
+2          OPTIONS OBS=MAX ;
+3          LIBNAME SASLIB '/ftp/pub/tmp/98110313-4' ;
+NOTE: Libref SASLIB was successfully assigned as follows: 
+      Engine:        V611 
+      Physical Name: /ftp/pub/tmp/98110313-4
+4               *** BEGIN DATA STEP ***;
+5          DATA WORK.pums905p (COMPRESS=YES) ;
+6               *** READ DATA FROM STANDARD INPUT ***;
+7          INFILE STDIN LRECL= 231  MISSOVER;
+8               *** BEGIN LENGTH SATEMENT ***;
+9          LENGTH
+10         	APOWST	$	1
+11         	POWSTATE	$	2
+12         	PWGT1	$	4
+13         	SERIALNO	$	7
+14         ;
+15              *** END   LENGTH STATEMENT ***;
+16              *** BEGIN LABEL STATEMENT ***;
+17         LABEL
+18         	APOWST = 'Place of Work State Allocation Flag'
+19         	POWSTATE = 'Place of Work State Appendix I '
+20         	PWGT1 = 'Pers. Wgt'
+21         	SERIALNO = 'Hu/gq Pers. Serial No. Unique Within Sta'
+22         ;
+23              *** END   LABEL STATEMENT ***;
+24              *** BEGIN KEEP STATEMENT ***;
+25         KEEP
+26         	APOWST
+27         	POWSTATE
+28         	PWGT1
+29         	SERIALNO
+30         ;
+31              *** END   KEEP STATEMENT ***;
+32              *** BEGIN INPUT STATEMENT ***;
+2                                                          The SAS System                            13:55 Tuesday, November 3, 1998
+
+33         INPUT
+34         	APOWST	$	212 - 212
+35         	POWSTATE	$	95 - 96
+36         	PWGT1	$	18 - 21
+37         	SERIALNO	$	2 - 8
+38         ;
+39              *** END   INPUT STATEMENT ***;
+40         RUN;
+
+NOTE: The infile STDIN is:
+      File Name=<standard input>
+
+NOTE: 12491667 records were read from the infile STDIN.
+      The minimum record length was 231.
+      The maximum record length was 231.
+NOTE: The data set WORK.PUMS905P has 12491667 observations and 4 variables.
+NOTE: Compressing data set WORK.PUMS905P increased size by 75.82 percent. 
+      Compressed is 37999 pages; un-compressed would require 21612 pages.
+NOTE: DATA statement used:
+      real time           9:47.54
+      cpu time            6:15.89
+      
+
+41              *** END   DATA STEP ***;
+42              *** BEGIN FORMAT STATEMENT ***;
+43         PROC FORMAT LIBRARY=WORK ;
+44              *** VARIBLE='APOWST' FORMAT='$V1F' ***;
+45         VALUE $V1F
+46         '0' = 'No'
+47         '1' = 'Yes'
+48         ;
+NOTE: Format $V1F has been output.
+49              *** VARIBLE='POWSTATE' FORMAT='$V2F' ***;
+50         VALUE $V2F
+51         '00' = 'N/a Not a Worker Not in the Labor Force,'
+52         '01' = 'Alabama'
+53         '02' = 'Alaska'
+54         '04' = 'Arizona'
+55         '05' = 'Arkansas'
+56         '06' = 'California'
+57         '08' = 'Colorado'
+58         '09' = 'Connecticut'
+59         '10' = 'Delaware'
+60         '11' = 'District of Columbia'
+61         '12' = 'Florida'
+62         '13' = 'Georgia'
+63         '15' = 'Hawaii'
+64         '16' = 'Idaho'
+65         '17' = 'Illinois'
+66         '18' = 'Indiana'
+67         '19' = 'Iowa'
+68         '20' = 'Kansas'
+69         '21' = 'Kentucky'
+70         '22' = 'Louisiana'
+71         '23' = 'Maine'
+72         '24' = 'Maryland'
+73         '25' = 'Massachusetts'
+74         '26' = 'Michigan'
+3                                                          The SAS System                            13:55 Tuesday, November 3, 1998
+
+75         '27' = 'Minnesota'
+76         '28' = 'Mississippi'
+77         '29' = 'Missouri'
+78         '30' = 'Montana'
+79         '31' = 'Nebraska'
+80         '32' = 'Nevada'
+81         '33' = 'New Hampshire'
+82         '34' = 'New Jersey'
+83         '35' = 'New Mexico'
+84         '36' = 'New York'
+85         '37' = 'North Carolina'
+86         '38' = 'North Dakota'
+87         '39' = 'Ohio'
+88         '40' = 'Oklahoma'
+89         '41' = 'Oregon'
+90         '42' = 'Pennsylvania'
+91         '44' = 'Rhode Island'
+92         '45' = 'South Carolina'
+93         '46' = 'South Dakota'
+94         '47' = 'Tennessee'
+95         '48' = 'Texas'
+96         '49' = 'Utah'
+97         '50' = 'Vermont'
+98         '51' = 'Virginia'
+99         '53' = 'Washington'
+100        '54' = 'West Virginia'
+101        '55' = 'Wisconsin'
+102        '56' = 'Wyoming'
+103        '98' = 'Abroad'
+104        '99' = 'State Not Identified'
+105        ;
+NOTE: Format $V2F has been output.
+106        RUN;
+
+NOTE: PROCEDURE FORMAT used:
+      real time           0.32 seconds
+      cpu time            0.04 seconds
+      
+
+107             *** END   FORMAT STATEMENT ***;
+108        /**/
+109        * BOX PROGRAM Version 001.00: (BOX.SAS) ;
+110        * CREATED BY: Edward Cary Bean, Jr. ;
+111        *             U.S. Bureau of Census, Office of the Director ;
+112        * DATE:       July 25, 1990 ;
+113        * REVISED:    Sept. 18, 1990 ;
+114        * PURPOSE:    Converts SAS Data Sets and Format Catalogs into ;
+115        *             a single ASCII text file for use by other languages, ;
+116        *             software applications, databases, etc. ;
+117        * NOTE:       The output of this program is both data and information ;
+118        *             defining the data. It is CRITICAL that this program and ;
+119        *             the ASCII text files it creates not be modified by ;
+120        *             program users. If modifications or corrections are required ;
+121        *             contact the program creator so that the master program ;
+122        *             can be modified or corrected. The key to proper data ;
+123        *             transfer is CONSISTENCY! ;
+124        * USER INPUT: 1) Directory Location of Source Data Set ;
+125        *             2) Data Set Name (1 part name) ;
+4                                                          The SAS System                            13:55 Tuesday, November 3, 1998
+
+126        *             3) Format Catalog Directory ;
+127        *             4) Output Directory Location ;
+128        *             5) Number of Observations/Records to output ;
+129        * PGM OUTPUT: 1) An ASCII text "BOX" File (.box) Including:     ;
+130        *                a) Notes b) All SAS Data Definitions c) Data ;
+131        *             2) An ASCII text User Documentation file (.doc) ;
+132        *******************************************************************;
+133        *******************************;
+134        * MACRO INITIALIZATION SECTION ;
+135        *******************************;
+136        %LET BOXVERS=1.01;* The BOX Program Version Variable ;
+137        %LET BOXTYPE=1;   * The BOX Type Variable ;
+138        %LET ANS=;        * Temporary Variable for users answers ;
+139        %LET RECLEN=;     * Length of the DATA record (not all records) ;
+140        %LET MEMNAME=;    * Data Set Name ;
+141        %LET MEMLABEL=;   * Data set Label ;
+142        %LET CRDATE=;     * Data Set Creation Date ;
+143        %LET MODATE=;     * Data Set Modification Date ;
+144        %LET ENGINE=;     * SAS Data Engine Type ;
+145        %LET OUTSPEC=;    * Output File Specification ;
+146        %LET DOCFILE=;    * User Documentation File ;
+147        %LET INPDIR=;     * Input Directory ;
+148        %LET FMTDIR=;     * Formats Directory ;
+149        %LET INPSET=;     * Input Data Set Name ;
+150        %LET OUTDIR=;     * Output Directory (for .box and .doc files) ;
+151        %LET REQOBS=;     * Number of Observations Requested from Data Set ;
+152        **********************;
+153        %LET INPDIR=/ftp/pub/tmp/98110313-4/;
+154        %LET FMTDIR=/ftp/pub/tmp/98110313-4/;
+155        %LET OUTDIR=/ftp/pub/tmp/98110313-4/;
+156        %LET BOXVERS=1.01;
+157        %LET BOXTYPE=1;
+158        %LET BOXNAME=pums905p;
+159        %LET BOXLAB=pums905p;
+160        %LET NUMDS=1;
+161        %LET DSNAM1=pums905p;
+162        %LET ROBS1=MAX;
+163        run;
+164        **********************;
+165        **********************;
+166        * END TEMP SECTION   *;
+167        **********************;
+168        *********************;
+169        * BEGIN MAIN PROGRAM ;
+170        *********************;
+171        options obs=MAX SOURCE2;
+172        %LET OUTSPEC=&OUTDIR&BOXNAME%STR(.box); * OUTPUT FILE SPECIFICATION ;
+173        %PUT &OUTSPEC;
+/ftp/pub/tmp/98110313-4/pums905p.box
+174        *libname INPLIB "&INPDIR";      * INPUT LIBRARY ;
+175        libname LIBRARY "&FMTDIR";
+NOTE: Libname LIBRARY refers to the same physical library as SASLIB.
+NOTE: Libref LIBRARY was successfully assigned as follows: 
+      Engine:        V611 
+      Physical Name: /ftp/pub/tmp/98110313-4
+175                                       * FORMAT LIBRARY ;
+176        filename BOXFILE "&OUTSPEC";   * OUTPUT FILE ;
+177        run;
+5                                                          The SAS System                            13:55 Tuesday, November 3, 1998
+
+178        *************************************;
+179        * OUTPUT the '00' RECORDS to the BOX ;
+180        *************************************;
+181        data _NULL_; * Output Notes to BOXFILE ;
+182        file BOXFILE;
+183        put
+184          @1 '00'
+185          @3 "** BOXFILE Version &BOXVERS -- Data & Data Decription  File **"
+186        ;
+187        put
+188          @1 '00'
+189          @3 '** Created by E. Cary Bean, Jr. - Bureau of Census - DIR **'
+190        ;
+191        put
+192          @1 '00'
+193          @3 '** WARNING - DO NOT ALTER THE FORMAT/CONTENT OF BOX FILES (OR DATA WILL NOT TRANSFER PROPERLY)! **'
+194        ;
+195        put
+196          @1 '00'
+197          @3 
+'--+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----8----+----9----+----0----+----1----+----2----+';
+198        ;
+199        run;
+
+NOTE: The file BOXFILE is:
+      File Name=/ftp/pub/tmp/98110313-4/pums905p.box,
+      Owner Name=desuser,Group Name=des,
+      Access Permission=rw-r--r--
+
+NOTE: 4 records were written to the file BOXFILE.
+      The minimum record length was 60.
+      The maximum record length was 125.
+NOTE: DATA statement used:
+      real time           0.02 seconds
+      cpu time            0.01 seconds
+      
+
+200        ****************************************************;
+201        * OUTPUT the '01' (General Info) RECORDS to the BOX ;
+202        ****************************************************;
+203        data _NULL_;         * Output General Information to BOXFILE ;
+204        format NUMDS 3.BOXVERS 6.2 BOXTYPE 3. BOXNAME $20. BOXLAB $100.;
+205        NUMDS=&NUMDS; * Get MacroVariable values into Data Step Variables ;
+206        BOXVERS=&BOXVERS;
+207        BOXTYPE=&BOXTYPE;
+208        BOXNAME="&BOXNAME";
+209        BOXLAB="&BOXLAB";
+210        file BOXFILE MOD;        * WRITE TO  ;
+211        if _N_=1 then
+212        put
+213          @1     '01'
+214          @3     BOXVERS    z6.2
+215          @9     BOXTYPE    z3.
+216          @12    NUMDS      z3.
+217          @15    BOXNAME    $CHAR20.
+218          @35    BOXLAB     $CHAR100.
+219          @135   'SAS'
+220        ;
+6                                                          The SAS System                            13:55 Tuesday, November 3, 1998
+
+221        run;
+
+NOTE: The file BOXFILE is:
+      File Name=/ftp/pub/tmp/98110313-4/pums905p.box,
+      Owner Name=desuser,Group Name=des,
+      Access Permission=rw-r--r--,
+      File Size (bytes)=350
+
+NOTE: 1 record was written to the file BOXFILE.
+      The minimum record length was 137.
+      The maximum record length was 137.
+NOTE: DATA statement used:
+      real time           0.14 seconds
+      cpu time            0.02 seconds
+      
+
+222        ****************************************************************;
+223        *** MACNO1 - BEGIN MACRO THAT REPEATS FOR MULTIPLE DATA SETS ***;
+224        ****************************************************************;
+225        %MACRO MACNO1(ARGV1);
+226        %****************************************************************;
+227        %DO MCCNT=1 %TO &ARGV1 ;
+228        filename TMPCODE1 "&BOXNAME&MCCNT..tmp" ;
+229        %let FMTLNK=&FMTDIR&&DSNAM&MCCNT%STR(.fmt);  %* VARIABLE to FORMAT LINK FILE ;
+230        %put &FMTLNK;
+231        %***************************************************************;
+232        %*** Generate a CONTENTS Data Set from  Data Set to be BOXED ***;
+233        %***************************************************************;
+234        %*LET XXX=DSNAM;
+235        %*LET TMPNAM=&&&XXX&MCCNT;RUN;
+236        %*PUT NAME=WORK.&&DSNAM&MCCNT;
+237        %LET INS=WORK.&&DSNAM&MCCNT;RUN;
+238        proc contents noprint data=&INS out=TS1_&MCCNT;
+239        %******* UNCOMMENT NEXT LINE FOR PRODUCTION *****;
+240        %include "&FMTLNK"; %* FORMAT DUMMY CONTENTS Set using FORMAT LINK File ;
+241        run;
+242        %********** SORT CONTENTS Data Set for processing ;
+243        proc sort data=TS1_&MCCNT out=STS1_&MCCNT;
+244          by varnum;
+245        run;
+246        %***************************************************************************;
+247        %* Read the Sorted CONTENTS Data Set and generate PGM to "put" Data Records ;
+248        %***************************************************************************;
+249        data TS2_&MCCNT;    %* Generate program TEMPCODE1.. to be included later ;
+250        retain CURPOS 6; %* set initial cursor position to 6 and retain ;
+251        format
+252          MCCNT      z3.
+253          RECLEN     12.
+254          NOBS       14.
+255          MEMNAME    $CHAR8.
+256          MEMLABEL   $CHAR40.
+257          CRDATE     DATETIME16.
+258          MODATE     DATETIME16.
+259          IDXCOUNT   10.
+260          ENGINE     $CHAR8.
+261          VARNUM     6.
+262          NAME       $CHAR8.
+263          TYPE       1.
+7                                                          The SAS System                            13:55 Tuesday, November 3, 1998
+
+264          TEXTPOS    6.
+265          TEXTLEN    4.
+266          TEXTDEC    2.
+267          FORMAT     $CHAR8.
+268          LABEL      $CHAR40.
+269        ;
+270        set STS1_&MCCNT end=EOD;  %* Read From ;
+271        MARKER=CURPOS+LENGTH ; %* Marker is a position indicator ;
+272        MCCNT=&MCCNT;
+273        file TMPCODE1;         %* Write To ;
+274        if _N_=1 then          %* If first observation ;
+275                do;
+276                        put "PUT";
+277                        put "@1  '99'"; %* RECORD TYPE 99 - Data ;
+278                        put "@3  '" MCCNT +(-1) "'";
+279                end;
+280        if TYPE=2 then        %* If the Variables Type is 2 (Character) ;
+281                do;
+282                        PUT "@(" MARKER "- length( " NAME ") ) " NAME ;
+283                        TEXTPOS=CURPOS;
+284                        TEXTLEN=LENGTH;
+285                        TEXTDEC=0;
+286                        CURPOS=MARKER;
+287                end;
+288        if TYPE=1 and ( INFORML^=0 or INFORMD^=0 ) then   %* If Type is numeric and is INFORMATTED ;
+289                do;
+290                        PUT "@" CURPOS NAME INFORML +(-1) "." INFORMD ;
+291                        TEXTPOS=CURPOS;
+292                        TEXTLEN=INFORML;
+293                        TEXTDEC=INFORMD;
+294                        CURPOS=CURPOS+INFORML;
+295                end;
+296        else if TYPE=1 and ( FORMATL^=0 or FORMATD^=0 ) then    %* Else If Type is numeric and is FORMATTED ;
+297                do;
+298                        PUT "@" CURPOS NAME FORMATL +(-1) "." FORMATD ;
+299                        TEXTPOS=CURPOS;
+300                        TEXTLEN=FORMATL;
+301                        TEXTDEC=FORMATD;
+302                        CURPOS=CURPOS+FORMATL;
+303                end;
+304        else if TYPE=1 then %* Else If Type is 2 and not Formatted ;
+305                do;
+306                        PUT "@" CURPOS NAME "BEST12." ;
+307                        TEXTPOS=CURPOS;
+308                        TEXTLEN=12;
+309                        TEXTDEC=0;
+310                        CURPOS=CURPOS+12;
+311                end;
+312        RECLEN=TEXTPOS+TEXTLEN-1; %* Calculate Record Length ;
+313        if EOD then %* If no more OBS save values for later use in MacroVars ;
+314                do;
+315                   put ";" ;
+316                   call symput("RECL_&MCCNT",put(RECLEN,z12.)); %* Set Macro Variables ;
+317                   call symput("NOBS_&MCCNT",put(NOBS,z14.));
+318                   call symput("MEMN_&MCCNT",MEMNAME);
+319                   call symput("MEML_&MCCNT",MEMLABEL);
+320                   call symput("CRDT_&MCCNT",put(CRDATE,DATETIME16.));
+321                   call symput("MODT_&MCCNT",put(MODATE,DATETIME16.));
+8                                                          The SAS System                            13:55 Tuesday, November 3, 1998
+
+322                   call symput("ENGN_&MCCNT",put(ENGINE,$CHAR8.));
+323                end;
+324        %GLOBAL RECL_&MCCNT;
+325        %GLOBAL NOBS_&MCCNT;
+326        %GLOBAL MEMN_&MCCNT;
+327        %GLOBAL MEML_&MCCNT;
+328        %GLOBAL CRDT_&MCCNT;
+329        %GLOBAL MODT_&MCCNT;
+330        %GLOBAL ENGN_&MCCNT;
+331        run;
+332        %put &&RECL_&MCCNT;
+333        run;
+334        %END; %* END OF MACRO DO LOOP;
+335        %**************************************************************;
+336        %MEND MACNO1;
+337        **************************************************************;
+338        *** MACNO1 - END MACRO THAT REPEATS FOR MULTIPLE DATA SETS ***;
+339        **************************************************************;
+340        RUN;
+341        %MACNO1(&NUMDS);RUN;
+/ftp/pub/tmp/98110313-4/pums905p.fmt
+NOTE: %INCLUDE (level 1) file /ftp/pub/tmp/98110313-4/pums905p.fmt is file /ftp/pub/tmp/98110313-4/pums905p.fmt.
+342       +FORMAT
+343       +	APOWST $V1F.
+344       +	POWSTATE $V2F.
+345       +;
+NOTE: %INCLUDE (level 1) ending.
+NOTE: The data set WORK.TS1_1 has 4 observations and 35 variables.
+NOTE: PROCEDURE CONTENTS used:
+      real time           0.34 seconds
+      cpu time            0.04 seconds
+      
+
+
+NOTE: The data set WORK.STS1_1 has 4 observations and 35 variables.
+NOTE: PROCEDURE SORT used:
+      real time           0.06 seconds
+      cpu time            0.03 seconds
+      
+
+
+NOTE: The file TMPCODE1 is:
+      File Name=/ftp/pub/tmp/98110313-4/pums905p1.tmp,
+      Owner Name=desuser,Group Name=des,
+      Access Permission=rw-r--r--
+
+NOTE: 8 records were written to the file TMPCODE1.
+      The minimum record length was 1.
+      The maximum record length was 36.
+NOTE: The data set WORK.TS2_1 has 4 observations and 42 variables.
+NOTE: DATA statement used:
+      real time           0.19 seconds
+      cpu time            0.05 seconds
+      
+
+000000000019
+346        **************************************************************;
+347        *** MACNO2 - START OF MACRO NUMBER 2                       ***;
+9                                                          The SAS System                            13:55 Tuesday, November 3, 1998
+
+348        **************************************************************;
+349        %MACRO MACNO2(ARGV1);
+350        %**************************************************************************;
+351        %DO MCCNT=1 %TO &ARGV1 ;
+352        %******************************************;
+353        %*** OUTPUT the '02' Records to the BOX ***;
+354        %******************************************;
+355        data _NULL_;
+356        format RECL 14. NOBS 14. MEMN $20. MEML $100. ENGN $20. MCCNT 3. ;
+357        MCCNT=&MCCNT;
+358        ROBS=&&ROBS&MCCNT;
+359        RECL=&&RECL_&MCCNT;
+360        NOBS=&&NOBS_&MCCNT;
+361        MEMN="&&MEMN_&MCCNT";
+362        MEML="&&MEML_&MCCNT";
+363        CRDT="&&CRDT_&MCCNT";
+364        MODT="&&MODT_&MCCNT";
+365        ENGN="&&ENGN_&MCCNT";
+366        file BOXFILE MOD;
+367        put
+368          @1     '02'
+369          @3     MCCNT Z3.
+370          @6     MEMN  $CHAR20.
+371          @26    RECL  Z14.
+372          @40    NOBS  Z14.
+373          @54    ROBS  Z14.
+374          @68    CRDT  $CHAR16.
+375          @84    MODT  $CHAR16.
+376          @110   ENGN  $CHAR20.
+377          @130   MEML  $CHAR100.
+378        ;
+379        run;
+380        
+381        %**************************************************************************;
+382        %* 1. OUTPUT the '03' (Variable Info) RECORDS to the BOX                   ;
+383        %* 2. Create a Data Set of Formats Required from full catalog for this box ;
+384        %**************************************************************************;
+385        data TMS_&MCCNT (keep=FMTNAME); %* (2) Output Variable/Contents information to BOXFILE ;
+386        format MCCNT 3.;
+387        MCCNT=&MCCNT;
+388        set TS2_&MCCNT;
+389        FMTNAME=FORMAT;
+390        file BOXFILE mod;
+391        put        %* (1) Put Positions / Lengths for '03' Records ;
+392                @1      '03'
+393                @3      MCCNT   Z3.
+394                @6      VARNUM  Z6.
+395                @12     NAME    $CHAR20.
+396                @52     TYPE    Z1.
+397                @53     TEXTPOS Z6.
+398                @59     TEXTLEN Z4.
+399                @63     TEXTDEC Z2.
+400                @65     FORMAT  $CHAR20.
+401                @88     LABEL   $CHAR100.
+402        ;
+403        if FORMAT ^= "" then output; %* (2) List only Variables that are formatted ;
+404        run;
+405        %******************************************;
+10                                                         The SAS System                            13:55 Tuesday, November 3, 1998
+
+406        %* Dump the Format Catalog into a Data Set ;
+407        %******************************************;
+408        %****** modefied 2.25.91 proc format library=LIBRARY cntlout=TS3_&MCCNT;
+409        proc format library=WORK cntlout=TS3_&MCCNT;
+410        run;
+411        %***************************************************************;
+412        %* Sort the Data Set containing the LIST of formatted Variables ;
+413        %***************************************************************;
+414        proc sort data=TMS_&MCCNT out=STMS_&MCCNT;
+415        by FMTNAME;
+416        run;
+417        %**********************************************************************;
+418        %* Change the appearance of the "Format Name" in the Contents Data Set ;
+419        %* to match that carried by the Formats Data Set                       ;
+420        %**********************************************************************;
+421        data TS4_&MCCNT;
+422        set TS3_&MCCNT;
+423        if TYPE="C" then FMTNAME="$"||FMTNAME;
+424        format DSETNAME $20.;
+425        DSETNAME="&&MEMN_&MCCNT";
+426        DSETNUM=&MCCNT;
+427        run;
+428        %****************************;
+429        %* Sort the Formats Data Set ;
+430        %****************************;
+431        proc sort data=TS4_&MCCNT out=STS4_&MCCNT;
+432        by FMTNAME;
+433        run;
+434        %********************************************************************************;
+435        %* Merge the list of formats required to list of formats removing excess formats ;
+436        %********************************************************************************;
+437        data TS5_&MCCNT;
+438        merge STMS_&MCCNT (IN=INA) STS4_&MCCNT (IN=INB);
+439        by FMTNAME;
+440        if INA = 1 & INB = 1 then output;
+441        run;
+442        %*****************************************************;
+443        %* OUTPUT the '04' (Category Info) RECORDS to the BOX ;
+444        %*****************************************************;
+445        data _NULL_; %* Output Variable Format information to BOXFILE ;
+446        format
+447          FMTNAME     $CHAR8.
+448          START       $CHAR16.
+449          END         $CHAR16.
+450          LABEL       $CHAR40.
+451          MIN         3.
+452          MAX         3.
+453        %* DEFAULT wont format... reserve word ;
+454          FUZZ        16.
+455          PREFIX      $CHAR2.
+456          MULT        BEST12.
+457          FILL        $CHAR1.
+458          NOEDIT      3.
+459          TYPE        $CHAR1.
+460          SEXCL       $CHAR1.
+461          EEXCL       $CHAR1.
+462          HLO         $CHAR3.
+463          MCCNT       3.
+11                                                         The SAS System                            13:55 Tuesday, November 3, 1998
+
+464        ;
+465        set TS5_&MCCNT;        %* Read From ;
+466        MCCNT=&MCCNT;
+467        file BOXFILE mod;      %* Write To ;
+468        if _N_ = 1 then
+469        do;
+470          put
+471          @1 '00'
+472          @3 
+'--+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----8----+----9----+----0----+----1----+----2----+';
+473        end;
+474        put
+475          @1 '04'
+476          @3    MCCNT       z3.
+477          @6    FMTNAME     $CHAR20.
+478          @26   START       $CHAR20.
+479          @46   END         $CHAR20.
+480          @66   LABEL       $CHAR100.
+481          @166  MIN         z3.
+482          @169  MAX         z3.
+483          @172  DEFAULT     z3.
+484          @175  FUZZ        z16.
+485          @191  PREFIX      $CHAR2.
+486          @193  MULT        BEST12.
+487          @205  FILL        $CHAR1.
+488          @206  NOEDIT      z3.
+489          @209  TYPE        $CHAR1.
+490          @210  SEXCL       $CHAR1.
+491          @211  EEXCL       $CHAR1.
+492          @212  HLO         $CHAR3.
+493        ;
+494        run;
+495        %END;
+496        %MEND MACNO2;
+497        RUN;
+498        %MACNO2(&NUMDS);RUN;
+
+NOTE: Variable MAX is uninitialized.
+NOTE: The file BOXFILE is:
+      File Name=/ftp/pub/tmp/98110313-4/pums905p.box,
+      Owner Name=desuser,Group Name=des,
+      Access Permission=rw-r--r--,
+      File Size (bytes)=488
+
+NOTE: 1 record was written to the file BOXFILE.
+      The minimum record length was 229.
+      The maximum record length was 229.
+NOTE: DATA statement used:
+      real time           0.02 seconds
+      cpu time            0.02 seconds
+      
+
+
+NOTE: The file BOXFILE is:
+      File Name=/ftp/pub/tmp/98110313-4/pums905p.box,
+      Owner Name=desuser,Group Name=des,
+      Access Permission=rw-r--r--,
+      File Size (bytes)=718
+12                                                         The SAS System                            13:55 Tuesday, November 3, 1998
+
+
+NOTE: 4 records were written to the file BOXFILE.
+      The minimum record length was 187.
+      The maximum record length was 187.
+NOTE: The data set WORK.TMS_1 has 2 observations and 1 variables.
+NOTE: DATA statement used:
+      real time           0.05 seconds
+      cpu time            0.03 seconds
+      
+
+
+NOTE: The data set WORK.TS3_1 has 56 observations and 17 variables.
+NOTE: PROCEDURE FORMAT used:
+      real time           0.03 seconds
+      cpu time            0.01 seconds
+      
+
+
+NOTE: The data set WORK.STMS_1 has 2 observations and 1 variables.
+NOTE: PROCEDURE SORT used:
+      real time           0.03 seconds
+      cpu time            0.01 seconds
+      
+
+
+NOTE: The data set WORK.TS4_1 has 56 observations and 19 variables.
+NOTE: DATA statement used:
+      real time           0.04 seconds
+      cpu time            0.02 seconds
+      
+
+
+NOTE: The data set WORK.STS4_1 has 56 observations and 19 variables.
+NOTE: PROCEDURE SORT used:
+      real time           0.04 seconds
+      cpu time            0.01 seconds
+      
+
+
+NOTE: The data set WORK.TS5_1 has 56 observations and 19 variables.
+NOTE: DATA statement used:
+      real time           0.05 seconds
+      cpu time            0.02 seconds
+      
+
+
+NOTE: The file BOXFILE is:
+      File Name=/ftp/pub/tmp/98110313-4/pums905p.box,
+      Owner Name=desuser,Group Name=des,
+      Access Permission=rw-r--r--,
+      File Size (bytes)=1470
+
+NOTE: 57 records were written to the file BOXFILE.
+      The minimum record length was 125.
+      The maximum record length was 214.
+NOTE: DATA statement used:
+      real time           0.02 seconds
+      cpu time            0.02 seconds
+13                                                         The SAS System                            13:55 Tuesday, November 3, 1998
+
+      
+
+499        %********************************;
+500        %*** MACNO3 - START OF MACNO3 ***;
+501        %********************************;
+502        %MACRO MACNO3(ARGV1);
+503        %DO MCCNT=1 %TO &ARGV1;
+504        %*****************************************************;
+505        %* OUTPUT the '99' (DATA) RECORDS to the BOX          ;
+506        %*****************************************************;
+507        options obs=&&ROBS&MCCNT SOURCE2;  %* Set OBS option per user spec ;
+508        filename TMPCODE1 "&BOXNAME&MCCNT..tmp" ;
+509        %LET INSN=WORK.&&DSNAM&MCCNT; RUN;
+510        data _NULL_ ;***********;
+511        file BOXFILE mod ;
+512          put
+513          @1 '00'
+514          @3 
+'--+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----8----+----9----+----0----+----1----+----2----+' ;
+515        run;*********;
+516        data _NULL_ ;
+517        format MCCNT 3. ;
+518        MCCNT=&MCCNT ;
+519        set &INSN ;
+520        file BOXFILE mod LRECL=&&RECL_&MCCNT;
+521        %include TMPCODE1 ;
+522        run;
+523        %END;
+524        %MEND MACNO3;
+525        RUN;
+526        %********************************;
+527        %*** MACNO3 - END OF MACNO3 ***;
+528        %********************************;
+529        %MACNO3(&NUMDS);RUN;
+
+NOTE: The file BOXFILE is:
+      File Name=/ftp/pub/tmp/98110313-4/pums905p.box,
+      Owner Name=desuser,Group Name=des,
+      Access Permission=rw-r--r--,
+      File Size (bytes)=13636
+
+NOTE: 1 record was written to the file BOXFILE.
+      The minimum record length was 125.
+      The maximum record length was 125.
+NOTE: DATA statement used:
+      real time           0.02 seconds
+      cpu time            0.02 seconds
+      
+
+NOTE: %INCLUDE (level 1) file TMPCODE1 is file /ftp/pub/tmp/98110313-4/pums905p1.tmp.
+530       +PUT
+531       +@1  '99'
+532       +@3  '001'
+533       +@(7 - length( APOWST ) ) APOWST
+534       +@(9 - length( POWSTATE ) ) POWSTATE
+535       +@(13 - length( PWGT1 ) ) PWGT1
+536       +@(20 - length( SERIALNO ) ) SERIALNO
+537       +;
+14                                                         The SAS System                            13:55 Tuesday, November 3, 1998
+
+NOTE: %INCLUDE (level 1) ending.
+
+NOTE: The file BOXFILE is:
+      File Name=/ftp/pub/tmp/98110313-4/pums905p.box,
+      Owner Name=desuser,Group Name=des,
+      Access Permission=rw-r--r--,
+      File Size (bytes)=13762
+
+NOTE: 12491667 records were written to the file BOXFILE.
+      The minimum record length was 19.
+      The maximum record length was 19.
+NOTE: DATA statement used:
+      real time           3:41.63
+      cpu time            3:29.03
+      
+
+538        ***********************************;
+539        ***********************************;
+540        *** BEGIN DOCUMENTATION SECTION ***;
+541        ***********************************;
+542        ***********************************;
+543        options obs=max;run;  *** Reset OBS option ***;
+544        %LET DOCFILE=&OUTDIR&BOXNAME%STR(.doc);RUN;
+545        %PUT &DOCFILE;RUN;
+/ftp/pub/tmp/98110313-4/pums905p.doc
+546        *******************************************************;
+547        * Prepare options and file specifications for printing ;
+548        *******************************************************;
+549        options pagesize=86 linesize=132 pageno=1;
+550        run;
+551        DATA _NULL_;
+552        file "&DOCFILE";
+553        put;put;
+554        put @10 '*** "BOX" FILE USER DOCUMENTATION ***';
+555        put @10 "    ===== ==== ==== =============    ";
+556        put;
+557        put @10 "   -------       THE BOX";
+558        put @10 "  /      /";
+559        put @10 " /      / |      DEFINITIONS";
+560        put @10 " -------  |      &";
+561        put @10 " |     |  |      DATA";
+562        put @10 " |     |  /";
+563        put @10 " |     | /       (Maintained Together for Maximum Security";
+564        put @10 " -------          and Minimum Redundant Programming!)";
+565        put;put;put;
+566        put @10 "BOX File Name:..................... &BOXNAME (.box)";
+567        put @10 "BOX File Label:.................... &BOXLAB";
+568        put @10 "Source Data Set Directory:......... &INPDIR";
+569        put @10 "Source Data Format Directory:...... &FMTDIR";
+570        put @10 "Number of Source Data Sets......... &NUMDS";
+571        put @10 "BOX File Output Directory:......... &OUTDIR";
+572        put @10 "BOX Program Version Number......... &BOXVERS";
+573        put @10 "BOX Type Number.................... &BOXTYPE";
+574        put;put;
+575        RUN;
+
+NOTE: The file "/ftp/pub/tmp/98110313-4/pums905p.doc" is:
+      File Name=/ftp/pub/tmp/98110313-4/pums905p.doc,
+      Owner Name=desuser,Group Name=des,
+      Access Permission=rw-r--r--
+
+NOTE: 26 records were written to the file "/ftp/pub/tmp/98110313-4/pums905p.doc".
+      The minimum record length was 0.
+      The maximum record length was 69.
+NOTE: DATA statement used:
+      real time           0.13 seconds
+      cpu time            0.03 seconds
+      
+
+576        %********************************;
+577        %*** MACNO4 - START OF MACNO4 ***;
+578        %********************************;
+579        %MACRO MACNO4(ARGV1);
+580        %DO MCCNT=1 %TO &ARGV1;
+581        %********************************************************;
+582        %* Sort Variable information for output to documentation ;
+583        %********************************************************;
+584        proc sort data=TS2_&MCCNT out=STS2_&MCCNT;
+585        by textpos;
+586        run;
+587        DATA _NULL_;
+588        file "&DOCFILE" MOD ;
+589        put @15 "Source Data Set #&MCCNT NAME: &&DSNAM&MCCNT";
+590        put @15 "  Logical Data Record Length:........ &&RECL_&MCCNT";
+15                                                         The SAS System                            13:55 Tuesday, November 3, 1998
+
+591        put @15 "  Number of Observations Requested:.. &&ROBS&MCCNT";
+592        put @15 "  Data Set Label:.................... &&MEML_&MCCNT";
+593        put @15 "  Total Observations in Data Set:.... &&NOBS_&MCCNT";
+594        put @15 "  Date Data Set Created:............. &&CRDT_&MCCNT";
+595        put @15 "  Date Data Set Last Modified:....... &&MODT_&MCCNT";
+596        put @15 "  SAS Engine for Data Set:........... &&ENGN_&MCCNT";
+597        put;
+598        run;
+599        %END;
+600        %MEND MACNO4;
+601        RUN;
+602        %********************************;
+603        %*** MACNO4 - END OF MACNO4 ***;
+604        %********************************;
+605        %MACNO4(&NUMDS);RUN;
+
+NOTE: The data set WORK.STS2_1 has 4 observations and 42 variables.
+NOTE: PROCEDURE SORT used:
+      real time           0.04 seconds
+      cpu time            0.01 seconds
+      
+
+
+NOTE: The file "/ftp/pub/tmp/98110313-4/pums905p.doc" is:
+      File Name=/ftp/pub/tmp/98110313-4/pums905p.doc,
+      Owner Name=desuser,Group Name=des,
+      Access Permission=rw-r--r--,
+      File Size (bytes)=874
+
+NOTE: 9 records were written to the file "/ftp/pub/tmp/98110313-4/pums905p.doc".
+      The minimum record length was 0.
+      The maximum record length was 92.
+NOTE: DATA statement used:
+      real time           0.02 seconds
+      cpu time            0.01 seconds
+      
+
+606        %********************************;
+607        %*** MACNO5 - START OF MACNO5 ***;
+608        %********************************;
+609        %MACRO MACNO5(ARGV1);
+610        %DO MCCNT=1 %TO &ARGV1;
+611        proc printto print="&DOCFILE" ;
+612        run;
+613        proc print data=STS2_&MCCNT noobs label split='*';
+614        var
+615          MCCNT MEMNAME VARNUM NAME TYPE FORMAT LABEL TEXTPOS TEXTLEN TEXTDEC
+616        ;
+617        format MCCNT 3.;
+618        title '*** "BOX" FILE USER DOCUMENTATION ***';
+619        title2 "VARIABLE INFORMATION";
+620        title3 "BOX File: '&BOXNAME'";
+621        title4 "Data Set Number: &MCCNT";
+622        title5 "Data Set Name: '&&DSNAM&MCCNT'";
+623        label MCCNT='Data*Set*No.:';
+624        label MEMNAME='Data Set Name:';
+625        label VARNUM='Var.*No.:';
+626        label NAME='Variable Name:';
+627        label TYPE='Variable*Type:';
+628        label FORMAT='Format*Name:';
+629        label LABEL='Variable Label:';
+630        label TEXTPOS='Start*Position:';
+631        label TEXTLEN='Length:';
+632        label TEXTDEC='Dec.*Places:';
+633        run;
+634        proc print data=TS5_&MCCNT noobs label split='*';
+635        var
+636          DSETNUM DSETNAME FMTNAME START END TYPE LABEL PREFIX MULT FILL
+637        ;
+638        title '*** "BOX" FILE USER DOCUMENTATION ***';
+639        title2 "VARIABLE CATEGORY/FORMAT INFORMATION";
+640        title3 "BOX File: '&BOXNAME'";
+641        title4 "Data Set Number: &MCCNT";
+642        title5 "Data Set Name: '&&DSNAM&MCCNT'";
+643        format DSETNAME $8. ;
+644        label DSETNUM='Data*Set*No.:';
+645        label DSETNAME='Data Set Name:';
+646        label FMTNAME='Format*Name:';
+647        label START='Start*Value:';
+648        label END='End*Value:';
+649        label TYPE='Format*Type:';
+650        label LABEL='Format Label:';
+651        label PREFIX='Prefix*Char.:';
+652        label MULT='Mult*Val.:';
+16                                                         The SAS System                            13:55 Tuesday, November 3, 1998
+
+653        label FILL='Fill*Char.:';
+654        run;
+655        proc printto print=print ;
+656        run;
+657        %END;
+658        %MEND MACNO5;
+659        RUN;
+660        %********************************;
+661        %*** MACNO5 - END OF MACNO5 ***;
+662        %********************************;
+663        %MACNO5(&NUMDS);RUN;
+
+NOTE: PROCEDURE PRINTTO used:
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: The PROCEDURE PRINT printed page 1.
+NOTE: PROCEDURE PRINT used:
+      real time           0.30 seconds
+      cpu time            0.03 seconds
+      
+
+
+NOTE: The PROCEDURE PRINT printed page 2.
+NOTE: PROCEDURE PRINT used:
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+      
+
+
+NOTE: PROCEDURE PRINTTO used:
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+664        
+17                             The SAS System
+                                              13:55 Tuesday, November 3, 1998
+
+665        * Reset Options Used for Printing User Documentation ;
+666        options pagesize=20 linesize=77;
+667        proc printto print=print;
+668        run;
+
+NOTE: PROCEDURE PRINTTO used:
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+669        title1; * Clear titles *;
+670        ***************************;
+671        * Clean up Macro Variables ;
+672        ***************************;
+673        %LET BOXVERS=;    * The Program Version Variable ;
+674        %LET BOXTYPE=;    * The BOX Type Variable ;
+675        %LET ANS=;        * Temporary Variable for users answers ;
+18                             The SAS System
+                                              13:55 Tuesday, November 3, 1998
+
+676        %LET RECLEN=;     * Length of the DATA record (not all records) ;
+677        %LET MEMNAME=;    * Data Set Name ;
+678        %LET MEMLABEL=;   * Data set Label ;
+679        %LET CRDATE=;     * Data Set Creation Date ;
+680        %LET MODATE=;     * Data Set Modification Date ;
+681        %LET ENGINE=;     * SAS Data Engine Type ;
+682        %LET OUTSPEC=;    * Output File Specification ;
+683        %LET DOCFILE=;    * User Documentation File ;
+684        %LET INPDIR=;     * Input Directory ;
+685        %LET FMTDIR=;     * Formats Directory ;
+686        %LET INPSET=;     * Input Data Set Name ;
+687        %LET OUTDIR=;     * Output Directory (for .box and .doc files) ;
+688        %LET REQOBS=;     * Number of Observations Requested from Data 
+Set ;
+689        run;
+690        * END of BOX PROGRAM ;
+
+19                             The SAS System
+                                              13:55 Tuesday, November 3, 1998
+
+NOTE: The SAS System used:
+      real time           13:32.80
+      cpu time            9:45.60
+      
+NOTE: SAS Institute Inc., SAS Campus Drive, Cary, NC USA 27513-2414

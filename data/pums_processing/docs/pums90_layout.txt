@@ -1,0 +1,403 @@
+1                                                          The SAS System                            15:02 Friday, November 13, 1998
+
+NOTE: Copyright (c) 1989-1996 by SAS Institute Inc., Cary, NC, USA. 
+NOTE: SAS (r) Proprietary Software Release 6.11  TS040
+      Licensed to BUREAU OF THE CENSUS, Site 0031684014.
+
+
+
+
+This message is contained in the SAS news file, and is presented upon
+initialization.  Edit the files "news" in the "misc/base" directory to
+display site-specific news and information in the program log.
+The command line option "-nonews" will prevent this display.
+
+
+
+NOTE: AUTOEXEC processing beginning; file is /d7/sas611/autoexec.sas.
+
+NOTE: SAS initialization used:
+      real time           0.10 seconds
+      cpu time            0.06 seconds
+      
+
+NOTE: AUTOEXEC processing completed.
+
+1               *** BEGIN pums905p.sas PROGRAM ***;
+2          OPTIONS OBS=MAX ;
+3          LIBNAME SASLIB '/ftp/pub/tmp/98111315-2' ;
+NOTE: Libref SASLIB was successfully assigned as follows: 
+      Engine:        V611 
+      Physical Name: /ftp/pub/tmp/98111315-2
+4               *** BEGIN DATA STEP ***;
+5          DATA WORK.pums905p (COMPRESS=YES) ;
+6               *** READ DATA FROM STANDARD INPUT ***;
+7          INFILE STDIN LRECL= 231  MISSOVER;
+8               *** BEGIN LENGTH SATEMENT ***;
+9          LENGTH
+10         	POWSTATE	$	2
+11         	PWGT1	$	4
+12         	SERIALNO	$	7
+13         ;
+14              *** END   LENGTH STATEMENT ***;
+15              *** BEGIN LABEL STATEMENT ***;
+16         LABEL
+17         	POWSTATE = 'Place of Work State Appendix I '
+18         	PWGT1 = 'Pers. Wgt'
+19         	SERIALNO = 'Hu/gq Pers. Serial No. Unique Within Sta'
+20         ;
+21              *** END   LABEL STATEMENT ***;
+22              *** BEGIN KEEP STATEMENT ***;
+23         KEEP
+24         	POWSTATE
+25         	PWGT1
+26         	SERIALNO
+27         ;
+28              *** END   KEEP STATEMENT ***;
+29              *** BEGIN INPUT STATEMENT ***;
+30         INPUT
+31         	POWSTATE	$	95 - 96
+32         	PWGT1	$	18 - 21
+2                                                          The SAS System                            15:02 Friday, November 13, 1998
+
+33         	SERIALNO	$	2 - 8
+34         ;
+35              *** END   INPUT STATEMENT ***;
+36         RUN;
+
+NOTE: The infile STDIN is:
+      File Name=<standard input>
+
+NOTE: 196274 records were read from the infile STDIN.
+      The minimum record length was 231.
+      The maximum record length was 231.
+NOTE: The data set WORK.PUMS905P has 196274 observations and 3 variables.
+NOTE: Compressing data set WORK.PUMS905P increased size by 85.13 percent. 
+      Compressed is 585 pages; un-compressed would require 316 pages.
+NOTE: DATA statement used:
+      real time           11.14 seconds
+      cpu time            5.80 seconds
+      
+
+37              *** END   DATA STEP ***;
+38              *** BEGIN FORMAT STATEMENT ***;
+39         PROC FORMAT LIBRARY=WORK ;
+40              *** VARIBLE='POWSTATE' FORMAT='$V1F' ***;
+41         VALUE $V1F
+42         '00' = 'N/a Not a Worker Not in the Labor Force,'
+43         '01' = 'Alabama'
+44         '02' = 'Alaska'
+45         '04' = 'Arizona'
+46         '05' = 'Arkansas'
+47         '06' = 'California'
+48         '08' = 'Colorado'
+49         '09' = 'Connecticut'
+50         '10' = 'Delaware'
+51         '11' = 'District of Columbia'
+52         '12' = 'Florida'
+53         '13' = 'Georgia'
+54         '15' = 'Hawaii'
+55         '16' = 'Idaho'
+56         '17' = 'Illinois'
+57         '18' = 'Indiana'
+58         '19' = 'Iowa'
+59         '20' = 'Kansas'
+60         '21' = 'Kentucky'
+61         '22' = 'Louisiana'
+62         '23' = 'Maine'
+63         '24' = 'Maryland'
+64         '25' = 'Massachusetts'
+65         '26' = 'Michigan'
+66         '27' = 'Minnesota'
+67         '28' = 'Mississippi'
+68         '29' = 'Missouri'
+69         '30' = 'Montana'
+70         '31' = 'Nebraska'
+71         '32' = 'Nevada'
+72         '33' = 'New Hampshire'
+73         '34' = 'New Jersey'
+74         '35' = 'New Mexico'
+75         '36' = 'New York'
+3                                                          The SAS System                            15:02 Friday, November 13, 1998
+
+76         '37' = 'North Carolina'
+77         '38' = 'North Dakota'
+78         '39' = 'Ohio'
+79         '40' = 'Oklahoma'
+80         '41' = 'Oregon'
+81         '42' = 'Pennsylvania'
+82         '44' = 'Rhode Island'
+83         '45' = 'South Carolina'
+84         '46' = 'South Dakota'
+85         '47' = 'Tennessee'
+86         '48' = 'Texas'
+87         '49' = 'Utah'
+88         '50' = 'Vermont'
+89         '51' = 'Virginia'
+90         '53' = 'Washington'
+91         '54' = 'West Virginia'
+92         '55' = 'Wisconsin'
+93         '56' = 'Wyoming'
+94         '98' = 'Abroad'
+95         '99' = 'State Not Identified'
+96         ;
+NOTE: Format $V1F has been output.
+97         RUN;
+
+NOTE: PROCEDURE FORMAT used:
+      real time           0.06 seconds
+      cpu time            0.02 seconds
+      
+
+98              *** END   FORMAT STATEMENT ***;
+99         *****************************************************************************;
+100        *****************************************************************************;
+101        *** PROGRAM:    Dsas2ing.sas (based on sas2ing.sas) ;
+102        *** VERSION:    1.01;
+103        *** CREATED BY: Edward Cary Bean, Jr. ;
+104        ***             U.S. Bureau of Census, Office of the Director ;
+105        *** DATE:       April 22, 1991;
+106        *** REVISED:    April 22, 1991;
+107        *** PURPOSE:    Convert a SAS Data Set to Standard Database I/0 Format;
+108        ***             E.G. Data <TAB> Data <TAB> Data ...., with a load pgm ;
+109        ***             (This is also a UNIX standard format);
+110        *** NOTE:       ;
+111        ***             ;
+112        ***             ;
+113        ***             ;
+114        ***             ;
+115        ***             ;
+116        ***             ;
+117        *** USER INPUT: ;
+118        ***             ;
+119        *****************************************************************************;
+120        *****************************************************************************;
+121        *** The Next Lines Can be Modified for Proper Execution ******************;
+122        %LET INDS=WORK.pums905p;RUN;          * Input SAS Data Set Name (w/wo lib);
+123        %LET OUTF=/ftp/pub/tmp/98111315-2/pums905p.dat;RUN;          * Output Data File Name;
+124        %LET OUTP=/ftp/pub/tmp/98111315-2/pums905p.sql;RUN;          * Output SQL Program Name (Automatic);
+125        %LET TMPF=/ftp/pub/tmp/98111315-2/pums905p.tp1;RUN;          * Temporary Program file
+126        *%LET MAXR=MAX;RUN;                 * Max No. of Data Records to Output;
+4                                                          The SAS System                            15:02 Friday, November 13, 1998
+
+127        %LET MAXRL=10000;RUN;              * Max Length of Output Data Records;
+128        %LET MAXV=300;RUN;                 * Max No. of Variables to Output;
+129        *****************************************************************************;
+130        *****************************************************************************;
+131        proc contents data=&INDS out=cont1 noprint;run;
+
+NOTE: The data set WORK.CONT1 has 3 observations and 35 variables.
+NOTE: PROCEDURE CONTENTS used:
+      real time           0.06 seconds
+      cpu time            0.02 seconds
+      
+
+132        * proc print data=cont1;run;
+133        filename TMP1 "&TMPF";
+134        filename OUT1 "&OUTF";
+135        filename OUT2 "&OUTP";
+136        **********************************************************************;
+137        *** START OUTPUT CODE GENERATION DATA STEP ;
+138        **********************************************************************;
+139        options obs=&MAXV SOURCE2;
+140        data _NULL_;
+141        set cont1 end=EOD;
+142        file TMP1;
+143        if _N_=1 then
+144        do;
+145          put "PUT";
+146          put "  " NAME @ ;
+147        end;
+148        else
+149        do;
+150          put "+(-1) '09'X";
+151          put "  " NAME @ ;
+152        end;
+153        if EOD then
+154        do;
+155        put;
+156        put ";";
+157        *call symput("NUMOBS",_N_);
+158        end;
+159        run;
+
+NOTE: The file TMP1 is:
+      File Name=/ftp/pub/tmp/98111315-2/pums905p.tp1,
+      Owner Name=desuser,Group Name=des,
+      Access Permission=rw-r--r--
+
+NOTE: 5 records were written to the file TMP1.
+      The minimum record length was 1.
+      The maximum record length was 22.
+NOTE: DATA statement used:
+      real time           0.04 seconds
+      cpu time            0.02 seconds
+      
+
+160        *%put &NUMOBS;
+161        **********************************************************************;
+162        *** END   OUTPUT CODE GENERATION DATA STEP ;
+163        **********************************************************************;
+5                                                          The SAS System                            15:02 Friday, November 13, 1998
+
+164        **********************************************************************;
+165        *** START OUTPUT PRODUCTION DATA STEP ;
+166        **********************************************************************;
+167        OPTIONS OBS=MAX;
+168        data _NULL_;
+169        set &INDS end=EOD ;
+170        file OUT1 LRECL=&MAXRL ;
+171        %include TMP1;
+NOTE: %INCLUDE (level 1) file TMP1 is file /ftp/pub/tmp/98111315-2/pums905p.tp1.
+172       +PUT
+173       +  POWSTATE +(-1) '09'X
+174       +  PWGT1 +(-1) '09'X
+175       +  SERIALNO
+176       +;
+NOTE: %INCLUDE (level 1) ending.
+177        if EOD then
+178        do;
+179        * Next line required so ingres reads a blank line before EOF;
+180          put;
+181        end;
+182        run;
+
+NOTE: The file OUT1 is:
+      File Name=/ftp/pub/tmp/98111315-2/pums905p.dat,
+      Owner Name=desuser,Group Name=des,
+      Access Permission=rw-r--r--
+
+NOTE: 196275 records were written to the file OUT1.
+      The minimum record length was 0.
+      The maximum record length was 15.
+NOTE: DATA statement used:
+      real time           2.16 seconds
+      cpu time            2.14 seconds
+      
+
+183        **********************************************************************;
+184        *** END   OUTPUT PRODUCTION DATA STEP ;
+185        **********************************************************************;
+186        **********************************************************************;
+187        *** START LOAD PROGRAM GENERATION DATA STEP #1 ;
+188        **********************************************************************;
+189        OPTIONS OBS=&MAXV;
+190        data _NULL_;
+191        set cont1 NOBS=NUMOBS end=EOD;
+192        file OUT2;
+193        if _N_=1 then
+194        do;
+195          put "/*******************************************************************/";
+196          put "/* The following program was generated by the 'SAS2ING.SAS' pgm.   */";
+197          put "/* This is an Structured Querey Language (SQL) program.            */";
+198          put "/* The purpose of this program is to create and load an SQL table  */";
+199          put "/*   from an ASCII (TEXT) file (also generated by 'SAS2DB.SAS'     */";
+200          put "/* This code is generated specifically for Ingres SQL,             */";
+201          put "/* NOTE: Some modifications may be required.                       */";
+202          put "/*       Lines containing '\p' and '\g' are for Ingres Batch.      */";
+203          put "/*       f8 storage class is used for all numeric variables.       */";
+204          put "/*       (Storage clases can be modified if space is a problem)    */";
+205          put "/*       [location=()] and [from 'filename'] statements can change */";
+6                                                          The SAS System                            15:02 Friday, November 13, 1998
+
+206          put "/*******************************************************************/";
+207          put ;
+208          put "set autocommit on \g";
+209          put ;
+210          put "create table " MEMNAME "(";
+211        end;
+212        if TYPE = 2 then
+213        do;
+214          put "     " NAME "char(" LENGTH +(-1) ") with null" @;
+215          if _N_ ^= NUMOBS AND _N_ ^= &MAXV then
+216          do;
+217            put ",";
+218          end;
+219        end;
+220        if TYPE = 1 then
+221        do;
+222          put "     " NAME "f8 with null" @;
+223          if _N_ ^= NUMOBS AND _N_ ^= &MAXV then
+224          do;
+225            put ",";
+226          end;
+227        end;
+228        if EOD then
+229        do;
+230        put;
+231        put ")";
+232        put "with duplicates,";
+233        put "location = (ii_database)";
+234        put "\p\g";
+235        put ;
+236        end;
+237        run;
+
+NOTE: The file OUT2 is:
+      File Name=/ftp/pub/tmp/98111315-2/pums905p.sql,
+      Owner Name=desuser,Group Name=des,
+      Access Permission=rw-r--r--
+
+NOTE: 24 records were written to the file OUT2.
+      The minimum record length was 0.
+      The maximum record length was 69.
+NOTE: DATA statement used:
+      real time           0.03 seconds
+      cpu time            0.03 seconds
+      
+
+238        **********************************************************************;
+239        *** END   LOAD PROGRAM GENERATION DATA STEP #1;
+240        **********************************************************************;
+241        **********************************************************************;
+242        *** START LOAD PROGRAM GENERATION DATA STEP #2 ;
+243        **********************************************************************;
+244        data _NULL_;
+245        set cont1 NOBS=NUMOBS end=EOD;
+246        file OUT2 MOD;
+247        if _N_=1 then
+248        do;
+249          put "copy " MEMNAME "(";
+7                                                          The SAS System                            15:02 Friday, November 13, 1998
+
+250        end;
+251          if _N_ ^= NUMOBS AND _N_ ^= &MAXV then
+252          do;
+253            put "     " NAME +(-1) "= c0tab with null ('NULL'),";
+254          end;
+255          else if _N_ = NUMOBS OR _N_ = &MAXV then
+256          do;
+257            put "     " NAME +(-1) "= c0nl with null ('NULL'),";
+258          end;
+259        if EOD then
+260        do;
+261        put "     nl= d1)";
+262        put "from '&OUTF'";
+263        put "\p\g";
+264        end;
+265        run;
+
+NOTE: The file OUT2 is:
+      File Name=/ftp/pub/tmp/98111315-2/pums905p.sql,
+      Owner Name=desuser,Group Name=des,
+      Access Permission=rw-r--r--,
+      File Size (bytes)=1032
+
+NOTE: 7 records were written to the file OUT2.
+      The minimum record length was 4.
+      The maximum record length was 43.
+NOTE: DATA statement used:
+      real time           0.02 seconds
+      cpu time            0.02 seconds
+      
+
+266        **********************************************************************;
+267        *** END   LOAD PROGRAM GENERATION DATA STEP #2;
+268        **********************************************************************;
+269        OPTIONS OBS=MAX;
+
+NOTE: The SAS System used:
+      real time           13.67 seconds
+      cpu time            8.16 seconds
+      
+NOTE: SAS Institute Inc., SAS Campus Drive, Cary, NC USA 27513-2414

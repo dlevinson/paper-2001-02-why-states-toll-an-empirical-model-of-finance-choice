@@ -1,0 +1,115 @@
+
+
+         *** "BOX" FILE USER DOCUMENTATION ***
+             ===== ==== ==== =============    
+
+            -------       THE BOX
+           /      /
+          /      / |      DEFINITIONS
+          -------  |      &
+          |     |  |      DATA
+          |     |  /
+          |     | /       (Maintained Together for Maximum Security
+          -------          and Minimum Redundant Programming!)
+
+
+
+         BOX File Name:..................... pums905p (.box)
+         BOX File Label:.................... pums905p
+         Source Data Set Directory:......... /ftp/pub/tmp/98110313-4/
+         Source Data Format Directory:...... /ftp/pub/tmp/98110313-4/
+         Number of Source Data Sets......... 1
+         BOX File Output Directory:......... /ftp/pub/tmp/98110313-4/
+         BOX Program Version Number......... 1.01
+         BOX Type Number.................... 1
+
+
+              Source Data Set #1 NAME: pums905p
+                Logical Data Record Length:........ 000000000019
+                Number of Observations Requested:.. MAX
+                Data Set Label:....................                                         
+                Total Observations in Data Set:.... 00000012491667
+                Date Data Set Created:............. 03NOV98:13:55:05
+                Date Data Set Last Modified:....... 03NOV98:14:04:53
+                SAS Engine for Data Set:........... V611    
+
+                                               *** "BOX" FILE USER DOCUMENTATION ***             13:55 Tuesday, November 3, 1998   1
+                                                        VARIABLE INFORMATION
+                                                        BOX File: 'pums905p'
+                                                         Data Set Number: 1
+                                                     Data Set Name: 'pums905p'
+
+Data
+Set    Data Set     Var.   Variable   Variable   Format                                                  Start                Dec.
+No.:    Name:       No.:    Name:      Type:     Name:      Variable Label:                            Position:   Length:   Places:
+
+  1    PUMS905P        1   APOWST        2       $V1F       Place of Work State Allocation Flag              6         1        0   
+  1    PUMS905P        2   POWSTATE      2       $V2F       Place of Work State Appendix I                   7         2        0   
+  1    PUMS905P        3   PWGT1         2                  Pers. Wgt                                        9         4        0   
+  1    PUMS905P        4   SERIALNO      2                  Hu/gq Pers. Serial No. Unique Within Sta        13         7        0   
+                                               *** "BOX" FILE USER DOCUMENTATION ***             13:55 Tuesday, November 3, 1998   2
+                                                VARIABLE CATEGORY/FORMAT INFORMATION
+                                                        BOX File: 'pums905p'
+                                                         Data Set Number: 1
+                                                     Data Set Name: 'pums905p'
+
+ Data
+  Set    Data Set    Format    Start      End      Format                                                Prefix     Mult     Fill
+ No.:     Name:      Name:     Value:    Value:    Type:     Format Label:                               Char.:    Val.:    Char.:
+
+   1     PUMS905P     $V1F       0         0         C       No                                                      0            
+   1     PUMS905P     $V1F       1         1         C       Yes                                                     0            
+   1     PUMS905P     $V2F       00        00        C       N/a Not a Worker Not in the Labor Force,                0            
+   1     PUMS905P     $V2F       01        01        C       Alabama                                                 0            
+   1     PUMS905P     $V2F       02        02        C       Alaska                                                  0            
+   1     PUMS905P     $V2F       04        04        C       Arizona                                                 0            
+   1     PUMS905P     $V2F       05        05        C       Arkansas                                                0            
+   1     PUMS905P     $V2F       06        06        C       California                                              0            
+   1     PUMS905P     $V2F       08        08        C       Colorado                                                0            
+   1     PUMS905P     $V2F       09        09        C       Connecticut                                             0            
+   1     PUMS905P     $V2F       10        10        C       Delaware                                                0            
+   1     PUMS905P     $V2F       11        11        C       District of Columbia                                    0            
+   1     PUMS905P     $V2F       12        12        C       Florida                                                 0            
+   1     PUMS905P     $V2F       13        13        C       Georgia                                                 0            
+   1     PUMS905P     $V2F       15        15        C       Hawaii                                                  0            
+   1     PUMS905P     $V2F       16        16        C       Idaho                                                   0            
+   1     PUMS905P     $V2F       17        17        C       Illinois                                                0            
+   1     PUMS905P     $V2F       18        18        C       Indiana                                                 0            
+   1     PUMS905P     $V2F       19        19        C       Iowa                                                    0            
+   1     PUMS905P     $V2F       20        20        C       Kansas                                                  0            
+   1     PUMS905P     $V2F       21        21        C       Kentucky                                                0            
+   1     PUMS905P     $V2F       22        22        C       Louisiana                                               0            
+   1     PUMS905P     $V2F       23        23        C       Maine                                                   0            
+   1     PUMS905P     $V2F       24        24        C       Maryland                                                0            
+   1     PUMS905P     $V2F       25        25        C       Massachusetts                                           0            
+   1     PUMS905P     $V2F       26        26        C       Michigan                                                0            
+   1     PUMS905P     $V2F       27        27        C       Minnesota                                               0            
+   1     PUMS905P     $V2F       28        28        C       Mississippi                                             0            
+   1     PUMS905P     $V2F       29        29        C       Missouri                                                0            
+   1     PUMS905P     $V2F       30        30        C       Montana                                                 0            
+   1     PUMS905P     $V2F       31        31        C       Nebraska                                                0            
+   1     PUMS905P     $V2F       32        32        C       Nevada                                                  0            
+   1     PUMS905P     $V2F       33        33        C       New Hampshire                                           0            
+   1     PUMS905P     $V2F       34        34        C       New Jersey                                              0            
+   1     PUMS905P     $V2F       35        35        C       New Mexico                                              0            
+   1     PUMS905P     $V2F       36        36        C       New York                                                0            
+   1     PUMS905P     $V2F       37        37        C       North Carolina                                          0            
+   1     PUMS905P     $V2F       38        38        C       North Dakota                                            0            
+   1     PUMS905P     $V2F       39        39        C       Ohio                                                    0            
+   1     PUMS905P     $V2F       40        40        C       Oklahoma                                                0            
+   1     PUMS905P     $V2F       41        41        C       Oregon                                                  0            
+   1     PUMS905P     $V2F       42        42        C       Pennsylvania                                            0            
+   1     PUMS905P     $V2F       44        44        C       Rhode Island                                            0            
+   1     PUMS905P     $V2F       45        45        C       South Carolina                                          0            
+   1     PUMS905P     $V2F       46        46        C       South Dakota                                            0            
+   1     PUMS905P     $V2F       47        47        C       Tennessee                                               0            
+   1     PUMS905P     $V2F       48        48        C       Texas                                                   0            
+   1     PUMS905P     $V2F       49        49        C       Utah                                                    0            
+   1     PUMS905P     $V2F       50        50        C       Vermont                                                 0            
+   1     PUMS905P     $V2F       51        51        C       Virginia                                                0            
+   1     PUMS905P     $V2F       53        53        C       Washington                                              0            
+   1     PUMS905P     $V2F       54        54        C       West Virginia                                           0            
+   1     PUMS905P     $V2F       55        55        C       Wisconsin                                               0            
+   1     PUMS905P     $V2F       56        56        C       Wyoming                                                 0            
+   1     PUMS905P     $V2F       98        98        C       Abroad                                                  0            
+   1     PUMS905P     $V2F       99        99        C       State Not Identified                                    0            
