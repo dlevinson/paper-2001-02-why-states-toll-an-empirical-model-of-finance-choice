@@ -4,3 +4,9 @@
 __pycache__/
 *.pyc
 # local-package-git-hygiene:end
+# public-upload-paper-pdf-boundary:start
+# Local paper PDFs are audit references. Public GitHub upload includes them only
+# when PACKAGE_MANIFEST.csv marks the PDF as public_include_open_access_pdf_*.
+paper/*.pdf
+paper/*.PDF
+# public-upload-paper-pdf-boundary:end
