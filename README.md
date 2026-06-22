@@ -30,7 +30,7 @@ Letters to journals, manuscript drafts, alternate preprints, presentation files,
 
 ## Release Notes
 
-No human-subject confidentiality issue was identified in the retained derived state-level data. The public raw data sources are government/statistical sources; the local package files are derived/assembled research artifacts and appear suitable for public GitHub release with an explicit data/code license for author-created materials. The article PDF remains subject to publisher/repository terms and can be replaced by the HDL pointer for a public repository if needed.
+No human-subject confidentiality issue was identified in the retained derived state-level data. The public raw data sources are government/statistical sources; author-created package code, derived data, and documentation are released under the boundary in `LICENSE.md`. The article PDF remains subject to publisher/repository terms.
 
 Generated: 2026-05-16 18:52:09
 
@@ -42,5 +42,11 @@ Generated: 2026-05-21 06:40:20 AEST
 - Pipeline: `UPLOADED`
 - Sidecars added/updated: `PACKAGE_STATUS.md`, `PACKAGE_MANIFEST.csv`, `LICENSE_STATUS.md`.
 - Paper reference copies are for local audit convenience and are not public-upload assets without rights review.
-- Final GitHub upload should use the manifest include statuses and the license-status note.
+- The repository license boundary is recorded in `LICENSE.md`.
 <!-- package-hardening-status:end -->
+
+## License
+
+See `LICENSE.md`. Author-created code is MIT licensed; author-created derived
+data and documentation are CC BY 4.0. Papers and third-party inputs retain
+their original terms.
