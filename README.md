@@ -1,5 +1,9 @@
 # Why States Toll: An Empirical Model of Finance Choice
 
+## Contribution
+
+This paper provides an empirical explanation for why some U.S. states rely on tolls while others favor fuel and general taxes. It shows that nonresident workers, neighboring-state toll policies, historical toll-road commitments, and population predict toll-finance shares and that decentralizing road control strengthens incentives to charge outsiders.
+
 Row ID: `paper-2001-02`
 
 Citation: David M. Levinson. 2001. "Why States Toll: An Empirical Model of Finance Choice." *Journal of Transport Economics and Policy* 35(2): 223-238. Public repository copy: https://hdl.handle.net/11299/179879.
